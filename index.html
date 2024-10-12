@@ -30,12 +30,13 @@
                 <form id="calculated-form" class="bg-body-tertiary rounded p-3 mb-4" action="">
                     <div class="mb-4">
                         <label for="user-KM" class="form-label">Quanti KM devi percorrere?</label>
-                        <input type="number" class="form-control" id="user-KM"
+                        <input type="number" class="form-control" id="user-KM" min="1" max="500"
                             placeholder="Inserisci qui il numero di KM da percorrere">
                     </div>
                     <div class="mb-4">
                         <label for="user-age" class="form-label">Quanti anni hai?</label>
-                        <input type="number" class="form-control" id="user-age" placeholder="Inserisci qui la tua età">
+                        <input type="number" class="form-control" id="user-age" min="10" max="99"
+                            placeholder="Inserisci qui la tua età">
                     </div>
                     <button type="sumbit" class="btn btn-primary mb-5">Calcola</button>
                 </form>
