@@ -25,8 +25,9 @@
     <!--Sezione main-->
     <main>
         <div class="container">
+            <!--Sezione form-->
             <section>
-                <form id="calculated-form" action="">
+                <form id="calculated-form" class="bg-body-tertiary rounded p-3 mb-4" action="">
                     <div class="mb-4">
                         <label for="user-KM" class="form-label">Quanti KM devi percorrere?</label>
                         <input type="number" class="form-control" id="user-KM"
@@ -36,10 +37,18 @@
                         <label for="user-age" class="form-label">Quanti anni hai?</label>
                         <input type="number" class="form-control" id="user-age" placeholder="Inserisci qui la tua età">
                     </div>
-                    <button type="sumbit" class="btn btn-primary">Calcola</button>
+                    <button type="sumbit" class="btn btn-primary mb-5">Calcola</button>
                 </form>
             </section>
+            <!--/Sezione form-->
 
+            <section>
+                <div class="container bg-body-tertiary rounded p-3 d-none" id="show-price">
+                    <p>
+                        Il costo totale del biglietto è di <span id="result"></span>€
+                    </p>
+                </div>
+            </section>
         </div>
     </main>
     <!--/Sezione main-->
